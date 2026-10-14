@@ -1,0 +1,114 @@
+.team {
+  padding: 3rem 1.25rem;
+
+  @media (min-width: 760px) {
+    padding: 4rem 2rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    max-width: 1161px;
+    margin-inline: auto;
+
+    @media (min-width: 900px) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+      align-items: center;
+      gap: 3.5rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    justify-items: start;
+    gap: 1.25rem;
+  }
+
+  &__title {
+    margin: 0;
+    font: 700 clamp(1.75rem, 4vw, 2.6rem) var(--font-head);
+    color: var(--navy-dark);
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 52ch;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: 0.9rem 1.75rem;
+    border-radius: var(--radius);
+    background: var(--yellow);
+    background-image: linear-gradient(to top, var(--orange), var(--yellow));
+    font: 800 1rem var(--font-head);
+    color: var(--navy-dark);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(var(--navy-dark-rgb), 0.16);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--navy);
+      outline-offset: 3px;
+    }
+  }
+
+  &__media {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &__photo {
+    margin: 0;
+    overflow: hidden;
+    background: var(--white);
+    border: 2px solid var(--line);
+    border-radius: 12px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__badge {
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: 56px;
+    }
+  }
+}

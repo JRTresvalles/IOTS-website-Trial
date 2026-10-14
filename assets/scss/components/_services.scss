@@ -1,0 +1,121 @@
+.services {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: 760px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 2rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--line);
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    border-color: var(--navy);
+    /* Requires --navy-dark to be bare RGB numbers, e.g. 12, 30, 66 */
+    box-shadow: 0 14px 30px rgba(var(--navy-dark), .14);
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: var(--navy);
+    margin-bottom: 1.25rem;
+    transition: background .2s;
+  }
+
+  &__svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke .2s;
+  }
+
+  &:hover &__icon,
+  &:focus-within &__icon {
+    background: var(--yellow);
+  }
+
+  &:hover &__svg,
+  &:focus-within &__svg {
+    stroke: var(--navy-dark);
+  }
+
+  &__title {
+    font-size: 1.35rem;
+  }
+
+  &__text {
+    color: var(--muted);
+    flex: 1;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--navy);
+    margin-top: .5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  &__arrow {
+    display: inline-flex;
+    transition: transform .2s;
+
+    svg {
+      width: 1.4em;
+      height: 1.4em;
+      fill: currentColor;
+    }
+  }
+
+  &__link:hover &__arrow {
+    transform: translateX(4px);
+  }
+}
+
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    font: 800 1.4rem var(--font-head);
+    color: var(--navy-dark);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+  }
+
+  &__img {
+    height: 64px;
+    width: auto;
+  }
+}

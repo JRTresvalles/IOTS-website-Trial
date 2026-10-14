@@ -1,0 +1,21 @@
+:root {
+  --navy: #015687;
+  --navy-dark: #005581;
+  --orange: #f7a11a;
+  --orange-dark: #d98a0c;
+  --yellow: #ffdd56;
+  --ink: #1b2430;
+  --muted: #5a6677;
+  --paper: #f5f7fa;
+  --line: #dde3ec;
+  --white: #fff;
+
+  --font-head: 'Bricolage Grotesque', 'Segoe UI', sans-serif;
+  --font-body: 'Public Sans', 'Segoe UI', sans-serif;
+
+  --container: 1160px;
+  --bp-md: 760px;
+  --radius: 6px;
+}
+
+@mixin md { @media (min-width: var(--bp-md)) { @content; } }

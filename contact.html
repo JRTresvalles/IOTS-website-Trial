@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Insure On The Spot</title>
+  <meta name="description" content="Call or visit an Insure On The Spot location in Chicagoland.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="topbar__call" href="tel:773-202-5060">Call now 773-202-5060</a>
+      <div class="topbar__links"><a class="topbar__link" href="https://csp.insureonthespot.com/Login.aspx">Make My
+          Payment</a><a class="topbar__link" href="https://csp.insureonthespot.com/Login.aspx">Renew My Policy</a><a
+          class="topbar__link" href="https://www.insureonthespot.com/espanol/">Español</a></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#"><img
+          src="https://www.insureonthespot.com/wp-content/themes/orbit-media/images/logo.png" alt="Insure On The Spot"
+          width="180" height="52"></a>
+      <button class="header__toggle" aria-expanded="false" aria-controls="site-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg> </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="https://www.insureonthespot.com/auto-insurance/">Auto
+              Insurance</a></li>
+          <li class="nav__item"><a class="nav__link" href="https://www.insureonthespot.com/sr22-insurance/">SR22
+              Insurance</a></li>
+          <li class="nav__item"><a class="nav__link" href="location.html">Locations</a></li>
+          <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html" aria-current="page">Contact Us</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--cta" href="https://quote.insureonthespot.com/">Get Free
+              Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__content">
+          <h1>Chicago’s #1 Auto Insurance Agency</h1>
+          <p>
+            Get the right auto insurance coverage at a price that works for you.
+            We make getting insured simple and stress-free.
+          </p>
+          <a class="btn btn--primary" href="https://quote.insureonthespot.com/">Get a Free Quote</a>
+        </div>
+
+        <div class="banner__visual">
+          <img class="banner__img" src="assets/img/contact-hero.png" alt="Smiling Insure On The Spot agent pointing up"
+            width="1218" height="743" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-intro section--tint">
+      <div class="container">
+        <h1 class="contact-intro__title">Contact Us</h1>
+        <p class="contact-intro__text">Call, visit, or send us a message. We’ll help you get a quote, renew, or make a
+          payment.</p>
+        <ul class="quick-links">
+          <li class="quick-links__item"><a class="quick-links__link" href="https://quote.insureonthespot.com/">Get a
+              Quote</a></li>
+          <li class="quick-links__item"><a class="quick-links__link"
+              href="https://csp.insureonthespot.com/Login.aspx">Make a Payment</a></li>
+          <li class="quick-links__item"><a class="quick-links__link"
+              href="https://csp.insureonthespot.com/Login.aspx">Renew My Policy</a></li>
+          <li class="quick-links__item"><a class="quick-links__link"
+              href="https://www.insureonthespot.com/customer-service/report-insurance-claim/">Report a Claim</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container contact">
+        <div class="form-panel">
+          <h2 class="form-panel__title">Send us a message</h2>
+          <p class="form-panel__text">Tell us what you need and we’ll get back to you.</p>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row">
+              <label class="form__label">
+                <span class="form__label-text">Name <span class="form__req" aria-hidden="true">*</span></span>
+                <input class="form__control" name="name" autocomplete="name" required>
+                <p class="form__error" hidden>Enter your name.</p>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Email <span class="form__req" aria-hidden="true">*</span></span>
+                <input class="form__control" type="email" name="email" autocomplete="email" required>
+                <p class="form__error" hidden>Enter a valid email address.</p>
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label">
+                <span class="form__label-text">Phone</span>
+                <input class="form__control" type="tel" name="phone" autocomplete="tel">
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">How can we help?</span>
+                <select class="form__control form__control--select" name="topic">
+                  <option>Get a quote</option>
+                  <option>Renew my policy</option>
+                  <option>Make a payment</option>
+                  <option>Report a claim</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="form__label">
+              <span class="form__label-text">Message <span class="form__req" aria-hidden="true">*</span></span>
+              <textarea class="form__control form__control--textarea" name="message" rows="5" required></textarea>
+              <p class="form__error" hidden>Tell us how we can help.</p>
+            </label>
+
+            <p class="form__note"><span class="form__req" aria-hidden="true">*</span> Required</p>
+            <button class="btn btn--primary form__submit" type="submit">Send message</button>
+          </form>
+
+          <p class="form__success" id="form-success" role="status" hidden>Message sent. We’ll get back to you soon.</p>
+        </div>
+
+        <div class="contact__info">
+          <ul class="locations">
+            <li class="locations__item">
+              <h3 class="locations__name">Corporate Headquarters <span class="locations__badge">HQ</span></h3>
+              <p class="locations__addr">5485 N Elston Ave, Chicago, IL 60630</p>
+              <a class="locations__phone" href="tel:773-202-5060">(773) 202-5060</a>
+              <div class="locations__actions">
+                <a class="btn btn--primary btn--sm"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=5485+N+Elston+Ave,+Chicago,+IL+60630">Get
+                  Directions</a>
+                <a class="btn btn--outline btn--sm"
+                  href="https://www.insureonthespot.com/locations/corporate-headquarters/">See Hours &amp; Details</a>
+              </div>
+            </li>
+            <li class="locations__item">
+              <h3 class="locations__name">Chicago, IL South</h3>
+              <p class="locations__addr">8537 S Cicero Ave, Chicago, IL</p>
+              <a class="locations__phone" href="tel:773-202-0651">(773) 202-0651</a>
+              <div class="locations__actions">
+                <a class="btn btn--primary btn--sm"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=8537+S+Cicero+Ave,+Chicago,+IL">Get
+                  Directions</a>
+                <a class="btn btn--outline btn--sm"
+                  href="https://www.insureonthespot.com/locations/chicago-il-south/">See Hours &amp; Details</a>
+              </div>
+            </li>
+            <li class="locations__item">
+              <h3 class="locations__name">Berwyn, IL</h3>
+              <p class="locations__addr">7015 W Roosevelt Rd, Berwyn, IL</p>
+              <a class="locations__phone" href="tel:708-857-7661">(708) 857-7661</a>
+              <div class="locations__actions">
+                <a class="btn btn--primary btn--sm"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=7015+W+Roosevelt+Rd,+Berwyn,+IL">Get
+                  Directions</a>
+                <a class="btn btn--outline btn--sm" href="https://www.insureonthespot.com/locations/berwyn-il/">See
+                  Hours &amp; Details</a>
+              </div>
+            </li>
+            <li class="locations__item">
+              <h3 class="locations__name">Melrose Park, IL</h3>
+              <p class="locations__addr">1907 N Mannheim Rd, Melrose Park, IL</p>
+              <a class="locations__phone" href="tel:708-547-1800">(708) 547-1800</a>
+              <div class="locations__actions">
+                <a class="btn btn--primary btn--sm"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=1907+N+Mannheim+Rd,+Melrose+Park,+IL">Get
+                  Directions</a>
+                <a class="btn btn--outline btn--sm"
+                  href="https://www.insureonthespot.com/locations/melrose-park-il/">See Hours &amp; Details</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class=" section--tint">
+        <div class="container">
+          <div class="referral">
+            <div class="referral__body">
+              <h3 class="referral__title">Free $100 Amazon Gift Card</h3>
+              <p class="referral__text">Refer friends &amp; family. Mention your client code. When their
+                policy starts, you get a
+                $100 gift card.
+              </p>
+            </div>
+
+            <a class="btn btn--white" href="https://quote.insureonthespot.com/">I want this</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="team" aria-labelledby="team-title">
+      <div class="team__inner">
+        <div class="team__content">
+          <h2 class="team__title" id="team-title">Join Our Team</h2>
+
+          <p class="team__text">
+            Interested in working with a constantly growing and exciting
+            organization in the Chicago-land area?
+          </p>
+
+          <a class="team__cta" href="https://www.insureonthespot.com/employment-opportunities/">View Employment Opportunities</a>
+        </div>
+
+        <div class="team__media">
+          <figure class="team__photo">
+            <img src="assets/img/team.jpg" alt="The Insure on the Spot team smiling together" width="1200" height="600"
+              loading="lazy" />
+          </figure>
+
+          <ul class="team__badges">
+            <li>
+              <a class="team__badge"
+                href="https://www.bbb.org/chicago/business-reviews/auto-insurance/insure-on-the-spot-in-chicago-il-14007680/#sealclick"
+                target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/google-Reviews-transparent.webp" alt="Google Reviews, 5 stars" width="140"
+                  height="56" loading="lazy" />
+              </a>
+            </li>
+            <li>
+              <a class="team__badge"
+                href="https://www.bbb.org/chicago/business-reviews/auto-insurance/insure-on-the-spot-in-chicago-il-14007680/#sealclick"
+                target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/BBBLogo.webp" alt="BBB Accredited Business, rating A+" width="150" height="56"
+                  loading="lazy" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__title">Services</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="https://www.insureonthespot.com/auto-insurance/">Auto
+                Insurance</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://www.insureonthespot.com/sr22-insurance/">SR22
+                Insurance</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/auto-insurance/motorcycle-insurance/">Motorcycle Insurance</a>
+            </li>
+            <li class="footer__item"><a class="footer__link" href="https://quote.insureonthespot.com/">Get FREE
+                Quote</a></li>
+            <li class="footer__item"><a class="footer__link" href="https://csp.insureonthespot.com">Make My Payment</a>
+            </li>
+            <li class="footer__item"><a class="footer__link" href="https://csp.insureonthespot.com">Renew My Policy</a>
+            </li>
+            <li class="footer__item">Call Now 1-773-202-5060</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Locations</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/locations/corporate-headquarters/">Corporate Headquarters</a>
+            </li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/locations/chicago-il-south/">Chicago, IL South</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/locations/berwyn-il/">Berwyn, IL</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/locations/melrose-park-il/">Melrose Park, IL</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/service-areas/">Additional Areas Served</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__title">Need Help?</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/customer-service/payment-options/">Easy Payment Options</a>
+            </li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/customer-service/report-insurance-claim/">Report a Claim</a>
+            </li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/customer-service/auto-insurance-faq/">Auto Insurance FAQs</a>
+            </li>
+            <li class="footer__item"><a class="footer__link" href="blog.html">Tips &amp; Resources (Articles)</a></li>
+            <li class="footer__item"><a class="footer__link" href="contact.html">Contact Us</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/employment-opportunities/">Employment Opportunities</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/location-finder/">Location Finder</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/customer-service/ilivs-illinois-insurance-verification-system/">ILIVS
+                Illinois Insurance Verification System</a></li>
+            <li class="footer__item"><a class="footer__link"
+                href="https://www.insureonthespot.com/see-what-our-customers-are-saying-about-us/">See what our
+                customers are saying about us!</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <span>Copyright © 2026 Insure On The Spot · Trusted Since 1986</span>
+        <ul class="footer__legal">
+          <li class="footer__item"><a class="footer__link"
+              href="https://quote.insureonthespot.com/Default.aspx/dealer">Affiliate Login</a></li>
+          <li class="footer__item"><a class="footer__link"
+              href="https://www.insureonthespot.com/privacy-policy/">Privacy Policy</a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.insureonthespot.com/sitemap/">Sitemap</a>
+          </li>
+          <li class="footer__item"><a class="footer__link"
+              href="https://www.insureonthespot.com/terms-conditions/">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

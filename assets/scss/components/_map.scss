@@ -1,0 +1,65 @@
+.loc-layout {
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1.1fr;
+    align-items: start;
+  }
+
+}
+
+.loc-map {
+  order: -1; 
+  z-index: 0;
+  isolation: isolate; 
+  height: 300px;
+  overflow: hidden;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+
+  @media (min-width: 900px) {
+    order: 0;
+    position: sticky;
+    top: 96px;
+    height: 540px;
+  }
+}
+
+.loc-marker {
+  background: none;
+  border: 0;
+
+  &__icon {
+    display: block;
+    width: 36px;
+    height: 46px;
+    filter: drop-shadow(0 3px 4px rgba(var(--navy-dark-rgb), 0.35));
+    transition: transform 0.2s;
+  }
+
+  &__shape {
+    fill: var(--navy);
+    stroke: var(--white);
+    stroke-width: 2;
+  }
+
+  &__dot {
+    fill: var(--white);
+  }
+
+  &--active &__icon {
+    transform: scale(1.2);
+    transform-origin: 50% 100%;
+  }
+
+  &--active &__shape {
+    fill: var(--yellow);
+    stroke: var(--navy-dark);
+  }
+
+  &--active &__dot {
+    fill: var(--navy-dark);
+  }
+}

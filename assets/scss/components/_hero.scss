@@ -1,0 +1,84 @@
+.hero {
+  position: relative;
+  color: var(--white);
+  padding: 5rem 0 4.5rem;
+  background:
+    linear-gradient(
+      100deg,
+      rgb(1 51 79 / 94%) 35%,
+      rgb(1 51 79 / 55%)
+    ),
+    url('../img/iots-hom-hero.jpg') center / cover;
+
+  &__title {
+    color: var(--white);
+    max-width: 14ch;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 2rem;
+    display: grid;
+    gap: .4rem;
+    font-weight: 600;
+    max-width: 400px;
+  }
+
+  &__item::before {
+    content: '✓';
+    color: var(--orange);
+    font-weight: 800;
+    margin-right: .6rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .75rem;
+    width: min(100%, 26rem); 
+  }
+
+  &__or {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-weight: 600;
+
+    &::before,
+    &::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgb(255 255 255 / 35%);
+    }
+  }
+
+  &__call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem; 
+  }
+
+  &--page {
+    padding: 3rem 0;
+    background: var(--navy);
+
+    .hero__title {
+      max-width: none;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin: 0;
+    }
+
+    .hero__text {
+      color: rgba(var(--white), .85);
+      margin: .5rem 0 0;
+    }
+  }
+}

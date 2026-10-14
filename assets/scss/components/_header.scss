@@ -1,0 +1,142 @@
+.topbar {
+  background: var(--navy-dark);
+  color: var(--white);
+  font-size: 0.9rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.45rem 0;
+    flex-wrap: wrap;
+  }
+
+  &__link,
+  &__call {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__call {
+    font-weight: 700;
+    color: var(--orange);
+    margin-left: 0;
+  }
+
+  &__links {
+    display: none;
+
+    @media (min-width: 760px) {
+      display: block;
+    }
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow 0.2s;
+
+  &--scrolled {
+    box-shadow: 0 4px 16px rgba(var(--navy-dark), 0.12);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+  }
+
+  &__logo img {
+    height: 52px;
+    width: auto;
+  }
+
+  &__toggle {
+    background: none;
+    border: none; 
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+    color: var(--navy);
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  inset: 100% 0 auto;
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding: 1rem;
+
+  &--open {
+    display: block;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--ink);
+    border-radius: var(--radius);
+
+    &:hover,
+    &[aria-current="page"] {
+      color: var(--navy);
+    }
+
+    &--cta {
+      background-color: var(--yellow);
+      background-size: 100%;
+      background-image: linear-gradient(to top, var(--orange), var(--yellow));
+      border: none;
+      color: var(--navy-dark);
+      text-align: center;
+
+      &:hover {
+        background-color: var(--yellow);
+        background-image: linear-gradient(to top, var(--orange-dark), var(--yellow));
+        color: var(--navy-dark);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    display: block;
+    position: static;
+    border: 0;
+    padding: 0;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.form-panel {
+  background: var(--white);
+  border: 2px solid var(--line);
+  border-top: 6px solid var(--navy);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 8px 24px rgb(1 51 79 / 8%);
+
+  @media (min-width: 560px) {
+    padding: 2.25rem;
+  }
+
+  &__title {
+    margin: 0 0 .25rem;
+  }
+
+  &__text {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+  }
+}
+
+.form {
+  display: grid;
+  gap: 1.1rem;
+
+  &__row {
+    display: grid;
+    gap: 1.1rem;
+
+    @media (min-width: 560px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__label {
+    font: 700 .95rem var(--font-body);
+    color: var(--navy-dark);
+    display: grid;
+    gap: .35rem;
+  }
+
+  &__req {
+    color: #c0392b;
+  }
+
+  &__note {
+    margin: 0;
+    font-size: .85rem;
+    color: var(--muted);
+  }
+
+  &__control {
+    font: 400 1rem var(--font-body);
+    color: var(--ink);
+    width: 100%;
+    padding: .8rem 1rem;
+    background: var(--paper);
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    transition: border-color .2s, box-shadow .2s, background .2s;
+
+    &::placeholder {
+      color: #8b96a5;
+    }
+
+    &:hover {
+      border-color: rgb(1 86 135 / 50%);
+    }
+
+    &:focus {
+      outline: none;
+      background: var(--white);
+      border-color: var(--navy);
+      box-shadow: none;
+    }
+
+    &--select {
+      appearance: none;
+      padding-right: 2.6rem;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23015687' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 16px;
+    }
+
+    &--textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    &--invalid {
+      border-color: #c0392b;
+      background: #fff6f5;
+    }
+  }
+
+  &__error {
+    color: #c0392b;
+    font-weight: 600;
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  &__submit {
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+}
+
+.form__success {
+  background: #e8f6ee;
+  border-left: 4px solid #2e9d63;
+  border-radius: 6px;
+  padding: 1rem;
+  font-weight: 600;
+  color: #14532d;
+}
