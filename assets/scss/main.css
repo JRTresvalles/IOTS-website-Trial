@@ -847,6 +847,32 @@ p {
   font-weight: 600;
 }
 
+.locations__item-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0.5rem 0;
+}
+.locations__item-divider::before, .locations__item-divider::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: #ffdd56;
+  border-radius: 2px;
+}
+.locations__item-divider .locations__name {
+  margin: 0;
+  color: #015687;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
 .loc-layout {
   display: grid;
   gap: 1.5rem;
